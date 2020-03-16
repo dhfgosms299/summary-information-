@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title> 용어 요약정리 2월 17日 ~ 21日 </title>
+</head>
+<body>
+<hr>
+<h2><mark>2月 17日 수업 요약정리</mark></h2>
+<br> <h3><mark>03 장 이미지와 하이퍼링크 p93</mark> </h3>
+<h2> 이미지 </h2>
+<br> <h3> < img > .태그속성 닫는 태그 없이 사용 특징
+<br>(외부에서 삽입 - 사진의 주소 위치 인터넷상)
+<br>src="주소(사진의 위치를 알려줌)"
+<br> <mark>(ex img src="(파일위치 하위폴더만 불러와야함 (ex image/naver.jpg" > )</mark> - pc 에있는 사진을 저장해서 불러오는법 html + 사진 동시에
+<br> (ex img src="웹사이트에서 이미지주소복사를 해서 곧바로 불러올수있다.jpg" > ) - html 에만 올려야함
+<br> < alt="(설명하고자하는 내용)" > 속성 웹 접근성 이미지태그 에대한 설명을 사용할때 사용함
+<br> < title="마우스를 올려놓으면 여기 써저있는 내용이 표시됨" >
+<br> <mark>이미지태그 요약정리 (이미지태그는 그림을 조정하면 폭과 높이중 하나가 조정되면 나머지 한쪽도 비율에따라
+<br> 같이변경됨 src 주소 지정 방법은 웹주소를 그대로 복사해서 쓰는 방법과 pc 에서 지정하여 경로를 지정하여
+<br> 쓰는 방법이 있다. < alt 속성은 웹접근성에 의거하여 반드시 같이 써주어야 한다 >) </mark>
+<br> < caption > < /caption > 은 반드시 위에가서 표시됨 하지만 < figurecaption > < /figurecaption > 은 밑에가서 표시됨
+<br> < figure align =" center or right " < /figure > 사진도 속성으로 가운데정렬을할수있음 속성은 각각 부여하는 점이 다름
+<br>  figure > figurecaption (figurecaption 속성으로 사진밑에 내용을 넣을수있음)</h3>
+<hr> <h2> <mark>하이퍼링크</mark> </h2>
+<h3>target 창<br>
+href 연결주소</h3>
+<h3>< a > ~~~~ < /a > 인라인태그
+<br> < a  href="하이퍼 링크로 연결하고싶은 사이트 링크주소"  웹사이트 (홈페이지) 간 이동하는방법 < /a ></h3>
+(ex) < a href="링크주소" 연결하고자하는 제목  /a >
+
+<hr>
+<br> target 속성값 (현재창:_self - 생략가능,  새창:_blank)<br>
+a href="링크주소" and a href= "" target= "_self " 같은속성 뒤로가기가능<br>
+a href="링크주소" target="blank" - 새창여는 기능
+<hr>
+(ex) <a href="https://www.naver.com" target="_self"> 네이버1 a href="" target= "_self" 속성 /a > </a><br>
+<a href="https://www.naver.com"> a href=" "네이버2 </a> /a >
+<br>
+<a href="https://www.naver.com" target="_blank"> 네이버3 a href="" target= "_blank" 속성 /a > </a>
+<br><h3>응용 하이퍼텍스트 + 이미지삽입으로 링크연결<br>
+a href="링크주소" target="_blank or _self">
+img src="이미지 링크 주소" alt="링크에대한 설명 또는 제목"
+<br> title="마우스커서를 이미지에 올리면 여기 나와있는 제목 나타남"> (ex ) title="naver.com")<br>
+<br><a href="https://www.naver.com" target="_blank">
+<img src="https://dbscthumb-phinf.pstatic.net/2315_000_1/20180503120708313_7U0BCOA3X.jpg/company_2383_i1.jpg?type=m250&wm=N"
+alt="네이버 로고" title="naver.com"><br>
+</a></h3>
+<h2>하이퍼 텍스트 책갈피 기능</h2>
+<hr>
+<h3> p id = "이름" 문서안에서동일한 이름 재사용 X (P  id="")>  class = 이름 - 하는역활 선택하기위해씀 (무언가 작업 또는 별병을 부여)
+<br> < a href=#"같은문서안에서끼리 이동시 그  이름을 부여" /a <
+<br>  <mark>p id="정하고자하는 위치 (ex top, middle, bottom)" /p>
+<br>  buttom 정하기 a href="#선택해서 가고자하는 위치 ex "#top , middle , bottom"> 버튼 제목 /a></mark></a></h3>
+<br>
+ <a href="#middle">middle</a> , <a href="#bottom">bottom</a>
+<p id="top">네이버는 1999년 6월 이해진 글로벌투자책임자를 비롯한 창립 멤버들이 5년여간 준비한 끝에 정식 서비스를 시작했다.
+  당시 회사명은 네이버컴(주)이었다. ‘네이버’라는 어원은 ‘항해하다’라는 영어표현 ‘navigate’에 ‘사람’을 뜻하는 ‘-er’을 붙여 ‘NAVER’가 만들어졌다.
+  ‘인터넷을 항해하는 사람들’이라는 의미다.</p>
+
+
+
+
+
+
+<a href="#top">top</a> , <a href="#bottom">bottom</a>
+<p id="middle">2000년 7월 온라인 게임업체 한게임(설립자 김범수)과 검색전문회사 서치솔루션 등을 인수합병하고
+ 회사 이름을 엔에이치엔(NHN: Next Human Network)으로 변경했다.
+ 이후 네이버는 인터넷과 게임사업 각각의 영역에 집중하고 사업 속도를 높이기 위해 2013년 8월 네이버와 한게임의 사업을 분할했다.
+ 13년 만에 다시 이름을 찾은 네이버는 글로벌 사업에 더욱 주력하고 있다.</p>
+
+
+
+
+
+
+
+<a href="#middle">middle</a> , <a href="#top">top</a>
+<p id="bottom">주요 사업
+네이버 및 주요 자회사가 운영하는 인터넷 검색 포털, 모바일 메신저 등의 사업은 인터넷 산업에 해당한다.
+네이버는 국내 1위 인터넷 포털 '네이버(NAVER)'와 글로벌 모바일 플랫폼 '라인(LINE)' 등을 서비스하고
+있으며, 다양한 인터넷 서비스를 기반으로 디스플레이 광고, 동영상 광고 등 광고 사업과 검색, 쇼핑 검색 등 비즈니스플랫폼 사업,
+네이버 페이, IT서비스, 클라우드, 웍스 등 IT플랫폼 사업, 네이버 뮤직, 웹툰, 브이라이브(V LIVE) 등 콘텐츠서비스
+사업, 라인 및 기타 플랫폼 사업을 통해 매출을 창출하고 있다.</p>
+<hr>
+<br>
+    <h2><mark>2月 18日 화요일 수업내용 요약정리</mark></h2>
+     <h3><mark>이미지 맵 속성</mark></h3>
+       <pre><h3>area> /area> , usemap> /usemap>
+       area 는 <u>사진의 좌표값</u>을 찾는거 (사진위에서 좌표 를 찾을때 사용)
+       <br><u>area 태그 속성</u>
+<u>coods = 죄표값 속성</u>
+       <br><mark>< area shape="" 영역 형태</mark> -
+       <br><mark>원=(circle 중심점, 반지름) 죄표 구하는 법
+       <br><mark>(ex 287 497- 중심점 값 , 304,512,(반지름 크기 값 (ex ,50)</mark>
+       <br>사각형=(rect - (rectangular) 왼쪽 꼭지점과 오른쪽 아래 꼭지점) (ex coords="250,60,362,124")
+       <br>다각형=(poly 꼭지점 끼리 왼쪽부터 이어서 -
+       <br>(ex coords="406,224,332,351,346,405,401,461,457,452,476,354") </mark>
+       <br> 그림판 안에서 크기조정 속성에서 <u>백분율과 픽셀로</u> 사진 크기 조정가능
+       <br><u>좌표로는 x 축 가로 y 축 세로 ( ex (x) 1152 x (y) 648 px )</u>
+       <br>target= 새창, 현재창 선택
+       <br>alt= 설명
+       <br><mark>(ex  < img src="파일위치.jpg" alt="이미지 맵용 사진" usemap="#picture" >
+       <br> <  map name="pciture"  >
+       <br> <  area shape=("circle, rect, poly" coords=")좌표값 위치 (ex 350,280)"
+       <br> href="사이트 이름" alt="사이트의 설명" title="로 이동할 위치의 타이틀 설명">
+< / map ></mark>
+<  figure align="center"  > 이미지 가운데 정렬 <  /figure  >
+</pre></h3><br><hr>
+    <h3>응용하는 법
+  < a href="내가만든.html 파일" < /a > 로 내가만든 웹페이지간에 이동이 가능함</h3>
+<hr>
+<br>
+  <pre><h3>  form 태그 에서 사용하는 속성
+    <mark>< form method= "get"</mark> (보안성 X ) 주소표시줄에 입력한 내용이 그대로 나타남
+                         256byte ~ 4096byte 까지 데이터로 서버를 넘길수있음)
+    <mark>< form method= "post"</mark> (보안성 O ) 입력 내용 길이에 제한 X )
+    <mark>< form action="자료 처리되는과정 -
+    - (fom 태그 안에 처리해줄 서버상의 프로그램 지정)"</mark>
+    <mark>< form name="폼을 구별하는법 -
+    - (한문서안에 여러개의 form 태그가 있을경우 폼들을 구분하기위해 사용함)"</mark>
+    <mark>< form target="실행될 창"</mark>
+    <mark>< /form ></mark>
+</pre></h3>
+<hr>
+<h2>input 속성 태그 <mark>(닫는 태그가 없다) 자동 줄바꿈이 안됨 쓰여진 그대로 나타남</mark></h2><h3>
+<pre><mark>
+   사용시 < input type="밑에보이는 속성 기입" > </mark>
+<b>(hidden) 사용자가보이지 않는 서버를 넘겨지는 값)    (password) 비밀번호 입력 필드 (입력하는 내용이 **표시됨)
+  (text) 한줄짜리 텍스트 입력시 사용                (datetime) 국제 연,월,일,시,분,분할,초 를 넣는기능
+  (search) 검색 상자                               (datetime-local) 국내
+  (tel) 전화번호 필드                              (date) 날짜 연,월,일
+  (url) url 주소를 넣을때 사용                      (month) 연,월
+  (email) email 주소를 입력필드 사용                (week) 연,주
+  (time) 사용자 지역을 기준으로 (시,분,초,분할 초)   (number) 숫자 조절할수있는 화살표 기능
+  (range) 숫자를 조절할수있는 슬라이드 막대 기능     (color) 색상 표
+  (checkbox) 주어진 항목 2개이상 선택가능한 채크박스 (radio) 주어진 항목 1개만 선택할수있는 라디오 버튼 기능
+  (file) 파일을 첨부할수있는 버튼 기능              (image) 버튼대신 사용할 이미지 넣는 기능
+  (submit) 서버 전송 버튼 기능                     (reset) 리셋 버튼 기능
+  (buttom) 버튼 기능
+  <hr>
+  <h2><mark>Text  필드 속성 기능</mark></h2>
+  (name) 텍스트 필드를 구별할수있도록 이름 부여 (자료 송수실할때 구별 용도) (id="" 는 이 문서안에서 구분할때)
+  (size) 텍스트필드의 길이지정 (ex size 5 로 지정할시 10글자를 작성할시 size 로 지정한 글자 갯수만 보임) 보이는 글자수
+  (value) 초기값 텍스트 가 화면에 표시될때 텍스트 필드부분에 표시될 내용 value 속성을 사용하지
+  않으면 빈 텍스트 가 표시됨
+  (maxlength) 텍스트 필드에 입력할수있는 최다 문자 개수 지정
+  <form>
+(ex) 택스트 : <input type="text" name="inp 1" value="보입니다" size="5" maxlength="10">
+        <mark>< input type="text" name="inp1" value="보입니다" size="5" maxlength="10" ><br>
+               size 속성은 칸안에서 보여지는 문자수  maxlength 칸안에서 쓸수있는 최대 문자수</mark><br>
+     히든 : <input type="hidden" value="보이나요"><br>
+        <mark>히든 : < input type="hidden" value="보이나요" ></mark>
+     페스워드 : <input type="password" size="5" maxlength="10">
+        <mark>패스워드 : < input type="password" size="5" maxlength="10" ></mark>
+         <br><label for="inp1"><mark>라벨</mark> < label <mark>for="" label 을 연속으로 사용시 지정할수있는기능)="inp1"</mark> > <mark>라벨</mark>
+              <br> (label 사용시 텍스트는 label 안쪽으로) label 의 속성은 어느곳을 눌러도 창안으로 커서가 들어감
+             <input type="text" name="inp1" id="inp1"> < input type="text" <mark>name="inp1" id="inp1</mark>" >
+     < /label >
+        </label>
+        </form>
+        <form> < form > (email 과 url 은 송신 submit 을 할때 형식을 체크한다)<br>
+           검색 : <input type="search"> < input type="search" ><br>
+           이메일 : <input type="email"> < input type="email" ><br>
+           URL : <input type="url">  < input type="url" > <br>
+           전화번호 : <input type="tel"> < input type="tel" > <br>
+           <input type="submit" value="송신"> < input type="submit" value="송신" >
+           <input type="reset" value="취소"> < input type="reset" value="취소" >
+         </form> < /form >
+</b>
+</pre>
+</h3>
+<hr>
+<br>
+    <h2><mark>2月 19日 수요일 수업내용 요약정리</mark></h2>
+     <h3><mark>input 태그 </mark></h3>
+      <br>
+ <pre><h3>fieldset =( 네모칸 박스)<br>
+          legend =  ( 그룹의 제목 어떠한 목적으로 만들어졌는지 소스로 표현가능 )
+          & nbsp ; (영문자 로만 가능한  한칸 띄우기)
+          <fieldset style="width:50%;">< fieldset <mark>style="width:50%;"</mark> - 로 칸폭을 조절할수있음>
+            <legend> 개인정보 </legend> < legend > 개인정보 < /legend >
+               <label>성&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;명 < label >
+                 <input type="text"> < input type="text" >
+               </label> < label >
+               <label><br> 전화번호 < label > 전화번호
+                 <input type="tel"> < input type="tel" >
+               </label> < /label >
+               <label><br> 이 메  일&nbsp; < label > 이  메  일
+                 <input type="email"> < input type="email" >
+               </label> < /label >
+        </fieldset>< /fieldset >
+       type ="number" - 숫자입력 브라우저에 따라 스핀 박스 표시
+       <mark>type = "range" - 숫자 입력 필드 슬라이드 막대를 이용해 숫자 입력
+          ( range 속성)
+            - min="" 필드에 입력할수있는 최소값 tyep="range" 최소값 0
+            - max="" 필드에 입력할수 있는 최대값 typw="range" 최대값 100
+            - step="" 짝 홀 특정숫자 제한하려고할때 숫자 간격 지정 기본값 1이며 생략가능 (증가값)
+            - value="" 필드에 표시할 초기 값</mark>
+</pre>
+<form><mark>< form ></mark>
+         number (스핀박스) 숫자로 많이사용함 1씩올라감: <input type="number" min="1" max="100" step="5" value="30"><br>
+         <mark> < input type="number" min="1" max="100" (step="5" 숫자를 정하면 그 횟수마다 올라감 (ex 5,10,15) value="30" ></mark><br>
+         range (슬라이드 막대) 퍼센트로 많이 사용함 : <input type="range" min="0" max="100" step="10" value="50"><br>
+         <mark>< input type="range" min="0" max="100" ( step="10" 한칸씩 움직이는 횟수)  value="50" ></mark>
+</form>< /form >
+<br><hr>
+         <pre><h2>radio 버튼 = 동그랗게 나옴 여러학목중 하나만 선택할때 (점이찍힘)<br>
+            ( 속성 name="체크박스가 여러게있을 경우 버튼이나 체크박스를 구분하기위해 이름을지음"<br>
+                   value="선택한 라디오 체크박스 <mark>서버로 알려줄때 넘길 값지정 값은 영문이거나 숫자</mark>")<br>
+                   checked="라디오버튼 중 처음 선택되는 기능 기본 선택"
+         checkbox 버튼 = 네모 여러항목중 둘이상을 선택할때 (브이표시)</h2></pre><br>
+<form><mark>< form ></mark><h2>
+           <p>성별을 선택해 주세요</p> < p > 성별을 선택해 주세요 < /p >
+<pre><label><mark>< label ></mark>남자
+                <input type="radio" name="gender" value="man" checked>
+                 < input type="radio" name="gender" value="man" <mark>checked</mark> >
+</label><mark>< / label ></mark>
+<label><mark>< label >여자</mark>
+                <input type="radio" name="gender" value="woman">
+                < input type="radio" name="gender" value="woman" >
+</label> < /label >
+</form><mark>< /form ></mark><hr>
+<form><mark>< form ></mark><br>
+    <p> 다음중 먹고싶은 요리를 모두 선택하세요 </p> < p > 다음중 먹고싶은 요리를 모두 선택하세요 < /p >
+<label><mark>< label ></mark>
+       <input type="checkbox" name="manu 1" value="유"> 유산슬
+       < input type="checkbox" name="manu 1" value="유" > 유산슬
+</label><mark>< /label ></mark>
+<label><mark>< label ></mark>
+       <input type="checkbox" name="manu 2" value="탕"> 탕수육
+       < input type="checkbox" name="manu 2" value="탕" > 탕수육
+    </label><mark>< /label ></mark><br>
+</form><mark>< /form ></mark><br><hr>
+<form><mark>< form ></mark><br></h2>
+     <h2>컬러 속성 지정 가장 <mark>작은 값은 검정색</mark> 가장 <mark>큰값은 흰색</mark></h2>
+    <label><mark>< label ></mark><br>색상을 선택하세요.
+      <input type="color"> < input type="color"  value="색상표"><br>
+      라디오 버튼과 체크박스의 value 값은 서버로 송신할때 보내지는 값입니다.
+    </label><mark>< /label ></mark>
+    <pre>
+</form><mark>< /form ></mark><hr>
+<h2> <mark>날짜 태그</mark> </h2>
+<h2>기간을 정해주세요
+시작일 : <input type="date" value="2020-02-19"> <mark>value 는 초기 값</mark><br>
+<mark>< input type="date,month,week,time" value="2020-02-19" ></mark>
+종료일 : <input type="date"> ="date"
+월(month) :<input type="month" value="2020-07"> ="month" value="2020-07"
+주(week) : <input type="week" value="2020-W13"> ="week" value="2020-W13" <br>
+time(시간설정): <input type="time" value="13:33">  ="time" value="13:33" <br>
+datetime-local: <input type="datetime-local" value="2020-02-19T13:43"> ="datetime-local" value="2020-02-19T13:43"<br>
+<pre>(datetime-local 속성은 지역에따라서 연,월,일,시,분,초 를 표시함 반면에 date 는 연,월,일 만 표기됨 )
+인터넷 익스플로러는 표시가 안됨 (date,month,week)  time 속성에서 min,max 인식이 안됨
+ time 속성에는 min,max,step 속성이 인식이 안됨</pre><br><hr>
+<pre>autofocus - 지정한 입력창에 마우스 커서표시   placeholder - 입력란에 표시가 되있고, 문자작성시 그내용 사람짐
+      readonly - 내용을 보기만하고 입력 안됨 속성값 없이 readonly 라고만 씀
+                             (readonly="readonly", readonly="true")</h2></pre><br>
+<form> <mark><h2>< form ></mark>
+  required <input type="text"  autofocus required ><br>
+  autofocus &nbsp; (<b>& nbsp;</b> 한칸 띄우기)&nbsp;<input type="text" autofocus value="가나다"> <br>
+  <mark>< input type="text" autofocus value="가나다" autofocus 는 입력창중 한곳만 커서를 넣어줌 ></mark><br>
+  placeholder&nbsp;<input type="text" placeholder="형식은 2020-02-19"><br>
+  <mark>< input type="text" placeholder="형식은 2020-02-19" value="가나다"<br>
+    placeholder="입력하고 싶은 문구"<br>
+    (ex "형식은 2020-02-19") > 는 속성 안내글로 입력창에는 값이 안들어감</mark><br>
+  readonly&nbsp;<input type="text" readonly value="수정이불가능"><br>
+  <input type="submit" value="송신"> < input type="submit" value="송신" >
+</form><mark>< /form ></h2></mark><hr>
+
+
+  <h2><mark> 2月 20日 수업 요약정리 </mark></h2> <br>
+   <h2><mark>select 태그 속성 - 드롭다운 태그</mark> (<u>select 속성으로 목록을 기본적으로 한가지 옵션이 표시되고<br>
+   나머지옵션은 살펴본후 필요한 한가지 항목만 선택가능한 기능</u>)<br>
+   < select size="" 사이즈 에 정해진 숫자 항목으로만 보임
+        (ex) size="3"<br>
+   < option > select 태그 안에 기입하며 원하는 항목들을 추가할때 사용함 < /option >
+
+    multiple - 여러개의 옵션이 함꼐 표시 ctrl 키를 누른 상태로 드롭다운 메뉴에
+    있는 여러 항목 선택 가능</h2>
+    <pre>
+   <h2><mark>< form ></mark>
+
+         <mark><</mark> select  size="3" - 보여지는 항목 수 <br>
+               multiple - 여러개의옵션 사용가능 ctrl 키 누를시에 <mark>></mark>
+          <mark>< option value="1" > 항목1 < /option ></mark>
+          <mark>< option value="2" > 항목2 < /option ></mark>
+          <mark>< option value="3" > 항목3 < /option ></mark>
+          <mark>< option value="4" > 항목4 < /option ></mark>
+          <mark>< option value="5" > 항목5 < /option ></mark>
+        < /select >
+    <mark>< /form ></mark></h2><br></pre>
+
+  <form>
+  <select size="3" multiple>
+    <option value="1">항목1</option>
+    <option value="2">항목2</option>
+    <option value="3">항목3</option>
+    <option value="4">항목4</option>
+    <option value="5">항목5</option>
+  </select><br>
+  </form><hr>
+  <pre>
+  <h2><mark>< optgroup > 태그 사용법</mark> <br>
+     < optgroup > 는 select 태그 안에서 여러개의<br>
+     < option > 태그들을 두개의 < optgroup > 으로 묶는다</h2>
+
+  <b><h2><mark>< form ></mark>
+     <mark>< select ></mark>
+    <mark>< optgroup  label="중식"></mark>
+          < option value="1"> 내용 < /option >
+          < option value="2"> 내용 < /option >
+          < option value="3"> 내용 < /option >
+          < option selected value="4"> 유산슬 < /option >
+       <mark>< /optgroup ></mark>
+
+    <mark>< optgroup  label="양식"></mark>
+          < option value="5"> 내용 < /option >
+          < option value="6"> 내용 < /option >
+          < option value="7"> 내용 < /option >
+          < option value="8"> 내용 < /option >
+    <mark>< /optgroup ></mark>
+    <mark>< /select ></mark>
+  <mark>< /form ></mark></h2></b>
+</pre>
+<form>
+  <select>
+       <optgroup label="중식">
+
+           <option value="1"> 짜장면 </option>
+           <option value="2"> 짬  뽕 </option>
+           <option value="3"> 탕수육 </option>
+           <option value="4" selected> 유산슬 </option>
+
+       </optgroup>
+
+       <optgroup label="양식">
+           <option value="5"> 돈까스 </option>
+           <option value="6"> 파스타 </option>
+           <option value="7"> 스테이크 </option>
+           <option value="8"> 스파게티 </option>
+       </optgroup>
+    </select>
+</form><hr><br>
+   <h2><mark>datalist 태그<br>
+       넘어온 값만 ( 다시 선택시 다른항목시 지워야함)</mark></h2>
+<form>
+   <input type="text" list="choice">
+   <datalist id="choice">
+      <option>아메리카노</option>
+      <option>모카치노</option>
+      <option>카푸치노</option>
+      <option>카페라테</option>
+      <option>아메리카노 트리플샷</option>
+   </datalist>
+</form>
+
+<h2>< form ><br>
+   < input type="text" list="choice" ><br>
+   <mark>< datalist id="choice" ></mark><br>
+      < option >아메리카노< /option ><br>
+      < option >모카치노< /option ><br>
+      < option >카푸치노< /option ><br>
+      < option >카페라테< /option ><br>
+      < option >아메리카노 트리플샷< /option ><br>
+   <mark>< /datalist ></mark><br>
+< /form ><hr></h2>
+<h2><mark>textarea 태그 (닫는태그가 있고 여러줄 입력 가능)</mark></h2><br>
+<pre><h2>
+name = 전송
+
+cols - 칸 (글자 한글자) 가로
+                          +  ( cols x rows = 글자수 )
+rows - 줄 세로</h2>
+
+<form>
+    <textarea name="bluman" cols="50" rows="10"
+        placeholder="불만사항을 500자 이내로 써주세요" maxlength="500"></textarea><input type="button" value="button">
+</form>
+
+<b><h2><mark>< form ></mark>
+    < textarea name="bluman" cols="50" rows="10"(cols x rows = 전체글자)
+         <mark>placeholder="불만사항을 500자 이내로 써주세요"</mark>
+maxlength="500"><mark>(사이에다가 글자쓰면 <b>placeholder</b> 기능이 안먹힘)</mark>< /textarea >
+     < input type="button" value="button" ><br>
+     (input type="button,submit,reset") 만들수있다
+<mark>< /form ></mark></h2><br><hr>
+<h2> button 태그 (아무런기능 없는) 클릭만 됨 (submit,reset 은 거의 사용안함)<br>
+  < a > < /a >태그와 < button > < /button > 차이점 <br>
+     < a > - 글 이미지 = 하이퍼텍스트 이동 (주로 페이지 이동, 책갈피 이동)<br>
+     <mark>< button > < /button ></mark>- 자바스크립트 로 기능 연결
+<mark>< form ></mark>
+  < input type="text" >
+  < button >버튼< /button >
+  < button type="submit" > 송신 < /button >
+  < button type="reset">  취소 < /button >
+  <mark>< button type="button" >button< /button ></mark><br>
+  (위에보이는 button type="" 코드는 clear가 안된다 이유는 자바스트립트로 연결을 안했기 때문)
+<mark>< /form ></mark></h2><br>
+<h2> button  태그</h2>
+<form>
+  <input type="text">
+  <button>버튼</button>
+  <button type="submit"> 송신 </button>
+  <button type="reset">  취소 </button>
+  <button type="button">button</button>
+</form><pre>
+<h2> < input type="submit" > - 양식을 전송할때 <u>별도의 자바스크립트 없이 자동 전송 가능</u> VS
+     < button type="submit" > -  button 은 양식을 전송하려면 <u>추가적인 자바스크림트 필요 함</pre></h2></u><hr><br>
+     <hr>
+     <h2> <mark>(ex) output 태그 더하기</mark> </h2>
+       <form oninput="res.value= parseInt(num1.value)+parseInt(num2.value)">
+       <input type="number" name="num1" value="0">+
+       <input type="number" name="num2" value="0">=
+       <output name="res"></output>
+       </form>
+
+     <h2><mark>output 태그 (더하기,빼기,나누기,곱하기)</mark> </h2>
+<h2><mark>< form (oninput=<mark>"</mark><mark>res</mark>.value 입력이 들어왔을때="이 값을해라" <mark>parseInt(num1.value)</mark>(+,-,*,%)
+       <mark>parse(I 대문자 nt(num2.value)"</mark><mark>></mark><br>
+       < input type="number" <mark>name="num1"</mark> value="0" >+,-,*,%)<br>
+       < input type="number" <mark>name="num2"</mark> value="0" >=<br>
+       < output name=<mark>"res"</mark> >< /output >
+     <mark>< /form ></mark></h2>
+        <h2>(숫자 배열 컴퓨터는<br>(ex
+               3(oninput="res".valu) = <mark>1(parseInt(num1.value) + 2(parseInt(num2.value)</mark> )<br>
+               <mark>오른쪽 값</mark>= 을 왼쪽으로 </h2>
+        <hr>
+        <h2><mark>progress 태그</mark></h2>
+          <p> 진행률 : 50%</p>
+          <progress value="50" max="100">50</progress><br>
+
+          <h2> progress 태그 </h2>
+          <h2>< p > 진행률 : 50%< /p >
+            < progress value="50" max="100">50< /progress ></h2><hr>
+
+<h2><mark>meter</mark>태그</h2>
+<h2> meter 태그 (현재진행 상황을 퍼센트로 표시) </h2><br>
+<pre><h2>(min,max) - 범위의 최대 최소값. 정하지않으면 0과 1로 간주<br>
+           (value) - 범위내에서 차지하는 값
+             (low) - 낮은 정도 값
+            (high) - 높은 정도 값
+            (optimum) - 적당한 값 optimum 값이 high 값보다 크면 value 클수록 좋
+                                  optimum 값이 low 값보다 작으면 value 작을 좋</h2></pre><br>
+<form>
+   <meter value="0.5"></meter>meter value="0.5"<br>
+   <meter min="0" max="200" value="100"></meter>&nbsp;&nbsp;min="0" max="200" value="100"<br>
+   <meter min="0" max="200" value="150" low="70" high="140"></meter>&nbsp;&nbsp;min="0" max="200" value="150" low="70" high="140"<br>
+   <meter min="0" max="200" value="60" low="70" high="140"></meter>&nbsp;&nbsp;"0" max="200" value="60" low="70" high="140"<br>
+   <meter min="0" max="200" value="60" low="60" high="110"></meter>&nbsp;&nbsp;min="0" max="200" value="60" low="60" high="110"<br>
+   optimum : <meter min="0" max="200" value="60" low="70" high="140"
+   optimum="60"></meter>&nbsp;&nbsp;min="0" max="200" value="60" low="70" high="140"
+   optimum="60"<br>
+</form><br>
+   <h2>각각 다른 퍼센트에 따라 색깔이 변함</h2>
+
+<h2><b><mark>< form ></mark>
+   < meter value="0.5" >< /meter ><br>
+   < meter min="0" max="200" value="100" >< /meter ><br>
+   < meter min="0" max="200" value="150" low="70" high="140">< /meter ><br>
+   < meter min="0" max="200" value="60" low="70" high="140">< /meter ><br>
+   < meter min="0" max="200" value="60" low="60" high="110">< /meter ><br>
+   optimum : < meter min="0" max="200" value="60" low="70" high="140"
+   optimum="60">< /meter >
+<mark>< /form ></mark></b></h2>
+<hr>
+<br>
+<h2> 2月 21日 금요일 (CSS 용어)</h2><br>
+<h2> 스타일과 시트 </h2>
+ 스타일주석 ( /* */)
+
+
+    </body>
+</html>

@@ -1,0 +1,386 @@
+<doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>2020/ 03 02~ 06 용어정리</title>
+ <style>
+ *{font-size:30px;}
+  h3{color:red;}
+  h2{color:black;}
+ </style>
+</head>
+<body>
+  <h2><mark>2020년 3월 02일 월요일</mark></h2>
+  <h2><mark>liear-gradient - 그라데이션 효과 And 각도 효과 (deg = deg)</mark></h2>
+  <pre>
+   <mark>gradient 속성은 background 속성을 사용함</mark>
+   Gridation 속성은 body 부분에서는 잘사용 안함
+   선형 그라데이션 색상이 (수직또는 수평 또는 대각선 방향으로 일정하게 변하는것)
+   {linear-gradient(각도 or  방향,색상);}
+   Direction (to top, to left, to right, to bottom)
+   (ex
+   <mark>body{height:1000px;
+   background:linear-gradient(to top or 45deg 각도,white,blue,red,yellow);}
+   색상은 오른쪽에서 부터 순서대로 지정됨 white 색깔이 마지막</mark>
+   각도 (degree 속성) - 코드로 deg
+   <h2><mark>원형 그라데이션 - radial-gradient</mark></h2>
+   원의 중심과 크기를 지정해 그라데이션 모양을 바꿀수있음
+   기본형 {radial-gradient(circle,색상);} 색상은 가운데부터 바깥쪽으로
+   모양을 표시하지않으면 ellips 타원형 이 기본으로 표시된다
+   (ex
+   <mark>body{height:1000px;
+        background:radial-gradient(circle,white,yellow,red);}</mark>
+
+<h2><mark>{background:linear-gradient</mark></h2>
+            (to top,red,20%,green,40%,blue,60%,yellow,80%,violet);}</mark>
+            형식 퍼센트로 색상조절가능 그라데이션 효과를 넣을시
+            반드시 <mark>background:</mark> 코드를 넣어야함
+            {margin:30px;} 속성을 주어서 박스 간격을 떨어지게 할수있음
+            <br>
+<h2><mark>radial-gradient (원형 그라데이션 중심점 변경 속성)</mark></h2>
+        100% 에서 %를 나누어 중심점으로 부터 (왼쪽 위에서부터)
+      (ex <mark>
+{background:radial-gradient(circle at 20% 20%,red,white,blue);}
+
+{background:radial-gradient(circle at
+           20% 20%,red 20%, white 50%, blue 70%,yellow);}</mark>
+           <br></pre>
+  <h2><mark>그라데이션 반복 속성</mark></h2>
+<pre>(ex
+{background:repeating-linear-gradient(red,red 33px,yellow 66px,
+                              yellow 33px, blue 66px,blue 100px);}
+
+{background:repeating-linear-gradient(to right,
+                        (red,red 33px)-레드를 0px 부터 시작해서 33px 에서 끝냄
+                       ,yellow 66px,
+                        yellow 33px, blue 66px,blue 100px);}
+
+{background:repeating-linear-gradient(to right or left,
+                          red,yellow 33px, blue 66px);}
+                          - 방향을 생략하면 위에서 아래로 진행
+
+{background:repeating-radial-gradient(circle at 60% 60%
+                         ,yellow,yellow 10%, blue 10%,red 20%);}
+                          - 전체를 100% 로 생각했을때</pre><br><hr size="13">
+
+<h2><mark>CSS 박스모델</mark></h2>
+<pre>
+  block 요소 (자동 줄바꿈)<mark>
+  < p > < div > < h1 ~ h6 >
+  < blockquote > < ul > < li > < ol ></mark>
+
+  inline 요소 (자동 줄바꿈 x)<mark>
+  < img > < a > < span >
+  < strong > < i > < b ></mark>
+</pre><hr size="13">
+<h2><mark> 2월 03 일 화요일 </mark></h2>
+<pre>
+<mark>box model practicing</mark>
+
+< title >box model 1< /title >
+   < style >
+ <mark>div{ width : 300px;
+      height : 300px;
+      background-color:orange; }</mark>
+
+<mark>.box2{ padding: 30px; border:5px solid black;
+     margin : 30px; }</mark>
+  < /style >
+ < /head >
+    < body >
+<mark>< div > box model 1 < /div ></mark>
+<mark>< div class="box2">box model 2 < /div ></mark>
+    < /body >
+<br>
+<br>
+< title> box model 2 < /title >
+   < style >
+  <mark>.container {width : 80%;
+              height : 500px;
+              background-color: gray;}</mark>
+
+  <mark>.inner {width : 80%;
+              height : 70%;
+              background-color : lightblue;}</mark>
+
+  *{ color:white; font-size:20px; }
+
+   < /style >
+ < /head >
+< body >
+<mark>< div class="container" >
+   바깥박스</mark>
+<mark>< div class="inner" >
+  안쪽박스</mark>
+<mark>< /div ></mark>
+< /body >
+<mark>안쪽 바깥박스 (부모요소) 의 크기를 기준으로 %를 적용한다</mark>
+<hr size="13">
+<h2> <mark>display block 속성
+            (block 요소가 아닌 (inline)
+                    요소를 블록 요소로)</mark> </h2>
+
+< style >
+   <mark>img{display:block;}
+         a{display:block;}</mark>
+< /style >
+< /head >
+< body >
+
+    < img src="image/18.jpg" alt="pretty" width="100">
+    < img src="image/18.jpg" alt="pretty" width="100">
+    < img src="image/18.jpg" alt="pretty" width="100">
+    < a href="#"> 하이퍼링크 </a>
+< /body >
+<hr size="13">
+<mark>display inline 속성
+      (block 요소를 inline 요소로 만들때)</mark>
+< style >
+    <mark>div{width : 100px;
+        height : 100px;
+        background-color : gray;
+        margin : 10px;
+        display:inline-block;}</mark>
+
+    <mark>li{display:inline; background-color:yellow;
+          margin:10px;}</mark>
+
+    <mark>ol{display:inline; background-color:yellow;
+         margin:10px;}</mark>
+
+      display:inline 은 div 태그에서 충돌로 인해
+      보이지 않음 보이려할려면 inline-block 사용
+      대부분 inline 속성 값보다 inline-block
+      속성값을 더 많이 사용한다.
+
+< /style >
+< /head >
+< body >
+    < div >< /div >
+    < ul >
+       < li >항목1< /li >
+    < /ul >
+
+    < ol >
+       < li >항목1 < /li >
+    < /ol >
+< /body >
+<br>
+<hr size="13">
+<h2><mark>display-none 속성</mark></h2>
+< style >
+    .no{display:none;} - 이속성 사용시 화면에 나타나지 않음
+< /style >
+< /head >
+< body >
+    < img src="image/18.jpg" alt="pretty" width="400">
+    < img src="image/18.jpg" alt="pretty" width="400" class="no">
+< /body >
+<br>
+<hr size="13">
+<h2><mark>display-style 속성</mark>
+
+<mark>solid - 테두리를 실선으로 표시</mark>
+
+<mark>dashed - 테두리 짦은 선 (직선으로된 점선)표시</mark>
+
+<mark>dotted - 테두리를 점선</mark>
+
+<mark>double - 테두리를 이중선(겹선)표시 두선 사이의 간격은
+               border-width 값으로 지정</mark>
+
+<mark>groove - 테두리를 창에 조각한것처럼 표시, 홈이 파인듯 입체적으로 보임</mark>
+
+<mark>ridge - 테두리 창에서 튀어나온 것처럼 표시</mark>
+
+
+ {border-style:solid dashed dotted double groove inset;}
+ <br>
+ <hr size="13">
+ <h2><mark>border-width 속성</mark></h2>
+   < style >
+     div{width : 200px;
+         height : 200px;
+         border-style : solid; margin :10px;}
+      <mark>(body 는 div 속성으로 지정된 예시)</mark>
+     .box1{border-width : 5px;}
+     .box2{border-top-width: 3px;
+           border-right-width : 5px;
+           border-bottom-width : 10px;
+           border-right-width : 5px;}
+
+     .box3{border-width : 10px 20px;}
+      두개를 값을 사용할시 (10px - 상하) (20px 좌우) */
+
+     .box4{border-width : 10px 20px 30px 40px;}
+                          top right bottom left
+
+      <mark>사각형의 속성을 인식할때 시계방향으로 인식한다
+             top - right- - bottom - left</mark>
+   < /style >
+ <h2> border-color 속성
+     (같이쓸때 순서는 top - right - bottom - left) </h2>
+< style >
+ <mark>{border-color : 색깔;}</mark>
+ <mark>{border-top,right,bottom,left-color : 색깔;}</mark>
+ <mark>{border-(top,right,bottom,left-color : 색깔 색깔(순서는 상하 좌우);}</mark>
+
+< /style >
+<hr size="13">
+<h2><mark>3월 04일 수요일</mark></h2>
+<h2>border 속성 - 테두리 스타일 묶어 지정하기</h2>
+   <mark>{border-(top,right,bottom,left):
+         두께(px) 스타일(dotted,solid)색상;}</mark>
+(ex
+< style >
+  div {width : 200px;
+       height : 200px;
+       border: solid 3px;
+       margin: 30px;
+       }
+  .box1 {border-top : 3px dotted red;
+        }
+  .box2 {border-top : 1px solid black;}
+< /style >
+<br>
+<hr>
+<h2><mark>border-radius 속성</mark></h2>
+   <mark>{border-(top,left,right)-radius:크기(px) 백분율(%)}</mark>
+        %는 사각형의  폭과 높이 를 100% 하여 계산한다
+         %는 0 - 50 지정한다
+
+(ex < style >
+    div {width : 200px;
+         height : 200px;
+         border : 3px solid black;
+         background-color : gray;
+         background-clip :content-box;
+         padding : 10px;
+         margin : 50px;
+      }
+    .box1 <mark>{border-top-left-radius: 10px;
+           border-top-right-radius: 20px;
+           border-bottom-left-radius: 30px;
+           border-bottom-right-radius: 40px;}</mark>
+    < /style >
+    <mark> border-radius 생략 하는법 </mark>
+    (ex
+
+    < style >
+       div{ width : 200px;
+            height : 200px;
+            border : 3px solid black;
+            margin : 10px}
+       .box1{border-radius : 10px 20px 30px 40px;}
+              from top-left to bottom-left
+    <mark>위치를 생략하면 top-left 부터 시계방향으로 표시된다</mark>
+       .box2{border-radius : 10px 40px;}
+           두개로 표현하면 왼쪽 위 대각선 방향으로 같은 값으로 표시된다
+        .box3{border-radius : 30px;}
+           하나로 표시하면 전체 값으로 표시됨
+   < /style >
+   <br>
+   <hr size="13">
+   <h2><mark>box-shadow 속성</mark></h2>
+   <수평 거리 x> - 양수 겂은 요소의 오른쪽, 음수 값 요소의 왼쪽
+
+   <수직 거리 y> - 양수 값은 요소의 아래쪽, 음수 겂 요소의 위쪽
+
+   <흐림정도> - 0을 기본 값으로 해 진한 그림자 표시
+
+   <번짐정도> - 양수값을 사용하면 그림자가 모든 방향으로 퍼져
+                         그림자가 박스보다 크게 표시
+               음수값 그림자가 모든 방향으로 축소되어 표시 기본값 0
+
+   <색상> - 그림자의 색상지정 한가지만 지정 가능 , 여러개의 색상 지정
+
+   < inset > - 안쪽 그림자 설정 필요한 경우에만 사용하는 옵션 값
+
+   (ex
+
+   < title >box-shadow 속성 < /title >
+    < style >
+       div { width : 100px;
+             height : 100px;
+             border : 1px solid pink;
+             color : orange;
+             margin : 50px;}
+       .box2{box-shadow : 5px(x) 5px(y) 0px(흐림) 10px(번짐) gray;}
+       .box3{box-shadow : 5px 5px 5px 0px gray;}
+       .box4{box-shadow : 5px 5px 5px 0px gray inset(안쪽에 그림자);}
+
+    < /style >
+    <br>
+    <hr size="13">
+  <h2><mark>margin 속성</mark></h2>
+
+  <크기> - 너비나 높이 값 px(픽셀) 이나 cm(센티미터) 같은 단위와 함께 수치로 지정
+           ex - margin: 10px;
+  <백분율> - 박스 모델을 포함하고 있는 부모 요소 기준 너비나 높이 값 % 지정
+           ex- margin : 0.1%;
+  auto - display 속성에서 지정한 값에 맞게 적절한 값 자동지정
+
+  <mark>margin 이 겹치는 경우에는 마진 값이 큰쪽으로 겹쳐진다.
+         (세로 margin OK /  가로 margin 은 일정한 간격 X)</mark>
+
+  (ex
+
+  < title > margin 속성 < /title >
+   < style >
+      div{ width : 100px;
+           height : 100px;
+           border : 1px solid black;
+           display : inline-block;}
+      .box1{margin-top : 10px;
+            margin-right : 20px;
+            margin-bottom : 30px;
+            margin-left : 40px;
+            }
+      .box2{margin : 10px 20px 30px 40px;}
+            margin - 위치를 생략할때 시계방향으로
+                    ( from top to left)
+      .box3{margin : 20px 40px;} - 20px (상하) 40px (좌우)
+      .box4{margin : 30px;} (전체속성 지정)
+   < /style >
+   <br>
+   <hr size="13">
+   <h2><mark>padding 속성</mark></h2>
+   패딩은 테두리와 콘텐츠 (본문)사이의 여백을 말한다.
+   시계방향으로
+   .box1{padding-top : 10px;
+           padding-right : 20px;
+           padding-bottom : 30px;
+           padding-left : 40px;
+         }
+   .box2{padding :10px 20px 30px 40px;}
+
+   .box3{padding : 20px 40px;}
+
+   .box4{padding : 20px;}
+   <hr size="13">
+   <h2><mark>03월 05일 목요일</mark></h2>
+   <h2><mark> CSS 레이아웃 (positioning) </mark></h2>
+   <h2><mark>{box-sizing : (속성);} - 박스 너비 기준 정하기 (p328)</mark></h2>
+   content-box - width 속성 값을 콘텐츠 영역 너비 값 사용. (기본값)
+   border-box - width 속성 값을 콘텐츠 영역 테두리까지 포함한 박스
+                모델 전체 너비 값.
+  <hr>
+  <h2><mark>{float : (속성);} - 왼쪽이나 오른쪽으로 배치하기</mark></h2>
+   left = 해당요소를 문서의 왼쪽으로 배치
+   right = 해당요소를 문서의 오른쪽으로 배치
+   none = 좌우 어느쪽도 배치하지 않음.
+   {clear : both;} - 속성 사용시 float 속성을 해제할수있음
+   <mark>display vs float</mark>
+
+    display - 속성은 문제가 발생 (정렬 X) 순서를 못바꿈 (배치정렬 X)
+         (inline - div 태그 정렬 X 그래서 inline-block 속성을 사용해야함)
+
+   float - display 속성에 비해 오른쪽 왼쪽 정렬이 가능함
+             (배치정렬 가능)  가운데 정렬이 안됨.
+             float 속성을 없앨시 반드시 {clear : (both,left,right);}
+   <hr>
+   <h2><mark>03월 06일 금요일</mark></h2>
+
+</pre>
+</body>
+</html>
